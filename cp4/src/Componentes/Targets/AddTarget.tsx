@@ -28,6 +28,7 @@ const AddTarget: React.FC = () => {
       console.error('Erro ao adicionar target:', error);
       setError('Erro ao adicionar target. Tente novamente.'); // Define a mensagem de erro
     }
+    location.reload();
   };
 
   return (

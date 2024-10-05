@@ -24,6 +24,7 @@ const EditTarget: React.FC<{ target: Target; onClose: () => void }> = ({ target,
       console.error('Erro ao editar target:', error);
       setError('Erro ao editar target. Tente novamente.');
     }
+    location.reload();
   };
 
   useEffect(() => {
